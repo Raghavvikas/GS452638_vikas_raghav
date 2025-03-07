@@ -1,31 +1,28 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.page-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #d6d8da;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +31,231 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-logo img {
+  height: 40px;
+  background-color: #f8f9fa;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-menu li:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #222;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 1rem 0;
+}
+
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #444;
+}
+
+/* StoresPage.css */
+.store-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content */
+  width: 100%;
+  max-width: 100%;
+  background-color: #d4d4d4; /* Grey background */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.ag-theme-alpine {
+  width: 90%; /* Adjust the width */
+  max-width: 100%; /* Prevents it from going too wide */
+  height: auto;
+  min-height: 90%;
+  border-radius: 1rem;
+  border: 1px solid grey;
+  font-size: 14px;
+}
+
+.ag-header-cell-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+.drag-handle {
+  cursor: grab;
+}
+
+.store-card {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.custom-table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.delete-icon {
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.drag-handle {
+  font-size: 18px;
+  color: gray;
+  cursor: grab !important;
+}
+.ag-row-dragging .drag-handle {
+  cursor: grabbing !important; /* Closed hand while dragging */
+}
+
+/* Button Styling */
+.new-store-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.new-store-btn {
+  background-color: #f19579 !important;
+  border-color: #f19579 !important;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* SKUsPage.css */
+.sku-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sku-container button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sku-container button:hover {
+  background-color: #218838;
+}
+
+/* PlanningPage.css */
+.planning-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.planning-container .ag-theme-alpine {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* ChartPage.css */
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensure Navbar Elements Stay in Place */
+.navbar-custom {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Centered Title */
+.navbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Title Text */
+.navbar-title-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-title-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-title-text {
+    font-size: 1.2rem;
   }
 }

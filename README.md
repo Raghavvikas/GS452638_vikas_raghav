@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Synergy - Data Viewer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Synergy is a data visualization application that allows users to view and analyze Gross Margin data across multiple stores. It provides interactive charts and tables for better insights into sales and profitability.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## How to Run and Test the Project
 
-### `npm start`
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm or yarn installed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/synergy.git
+   cd synergy
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. The app should now be running on `http://localhost:3000/`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running Tests
+- To run unit tests:
+  ```bash
+  npm test
+  ```
+- To run integration tests:
+  ```bash
+  npm run test:integration
+  ```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features Implemented
+### ✅ Dynamic Chart Rendering
+- Users can select a store, and the chart dynamically updates to show Gross Margin Dollars and GM% over weeks.
+- Implemented with `recharts` to provide a dual-axis bar chart.
+- Handles missing store data by generating mock data for consistency.
 
-### `npm run build`
+### ✅ Redux State Management
+- Utilized Redux slices (`storeSlice.ts`, `skuSlice.ts`, `planningSlice.ts`) to manage application state efficiently.
+- Ensured store selection propagates to the chart and updates values accordingly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✅ Responsive UI with Bootstrap
+- Sidebar, Navbar, and page layouts are styled using Bootstrap.
+- The Chart page has a dark-themed background for enhanced readability.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ✅ Excel Data Processing
+- Implemented `useExcelData.ts` to process and extract store & SKU data from `.xlsx` files.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These features demonstrate my proficiency in handling state management, UI responsiveness, and integrating external libraries effectively.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## What I Would Improve with 4 More Hours
+1. **Enhance Data Processing Logic**
+   - Refactor `useExcelData.ts` to handle larger datasets efficiently.
+   - Optimize data fetching and memoization to reduce unnecessary re-renders.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Improve Chart UI/UX**
+   - Add tooltips and data labels for better readability.
+   - Improve the color scheme to make GM% more distinguishable.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Add API Integration**
+   - Implement an Express.js backend to fetch real-time data instead of mock data.
+   - Store data in PostgreSQL to ensure persistence.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Write More Tests**
+   - Increase test coverage for Redux slices and utility functions.
+   - Implement E2E tests using Cypress for UI validation.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Feedback on the Challenge (Optional)
+- The challenge was well-structured and covered key aspects of a real-world React-Redux project.
+- It would be great to have more clarification on the expected data format for charts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### Author: Vikas Raghav
+### Contact: vickyraghav89@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

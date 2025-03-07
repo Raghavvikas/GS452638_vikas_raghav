@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "sku": "Cotton Polo Shirt",
+    "price": 139.99,
+    "cost": 10.78
+  },
+  {
+    "id": 2,
+    "sku": "Tassel Fringe Handbag",
+    "price": 134.99,
+    "cost": 20.79
+  },
+  {
+    "id": 3,
+    "sku": "Minimalist Leather Watch",
+    "price": 49.99,
+    "cost": 49.89
+  },
+  {
+    "id": 4,
+    "sku": "Foldable Travel Hat",
+    "price": 194.99,
+    "cost": 56.16
+  },
+  {
+    "id": 5,
+    "sku": "Striped Cotton Socks",
+    "price": 9.99,
+    "cost": 6.91
+  },
+  {
+    "id": 6,
+    "sku": "Sherpa Lined Hooded Coat",
+    "price": 174.99,
+    "cost": 128.09
+  },
+  {
+    "id": 7,
+    "sku": "Fleece-Lined Parka",
+    "price": 59.99,
+    "cost": 17.4
+  },
+  {
+    "id": 8,
+    "sku": "Perforated Leather Belt",
+    "price": 44.99,
+    "cost": 4.5
+  },
+  {
+    "id": 9,
+    "sku": "Yoga Leggings",
+    "price": 164.99,
+    "cost": 172.58
+  },
+  {
+    "id": 10,
+    "sku": "Graphic Print T-Shirt",
+    "price": 109.99,
+    "cost": 53.35
+  },
+  {
+    "id": 11,
+    "sku": "Luxury Silk Tie",
+    "price": 54.99,
+    "cost": 20.95
+  },
+  {
+    "id": 12,
+    "sku": "Silk Embroidered Kimono",
+    "price": 74.99,
+    "cost": 12.3
+  },
+  {
+    "id": 13,
+    "sku": "Formal Velvet Blazer",
+    "price": 194.99,
+    "cost": 189.14
+  }
+]

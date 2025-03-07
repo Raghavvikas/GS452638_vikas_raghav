@@ -1,0 +1,45 @@
+/* SKU Page Styles */
+.sku-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sku-card {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.custom-table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.delete-icon {
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Button Styling */
+.new-sku-container {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 10px;
+  left: 30%;
+  width: 100%;
+  background-color: rgb(105, 104, 103) !important;
+}
+
+.new-sku-btn {
+  background-color: #f19579 !important;
+  border-color: #f19579;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
